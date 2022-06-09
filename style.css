@@ -1,0 +1,86 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    user-zoom: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Short Stack', cursive, bold;
+    background-image: url('https://img.freepik.com/free-photo/gray-painted-background_53876-94041.jpg?t=st=1654787231~exp=1654787831~hmac=3f51e66c7bb135da50885976d7d3d0e9d82169090597a90e6ce124898076ada5&w=1380');
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vh;
+    margin-bottom: 10vh;
+}
+
+.footer{
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13vh;
+}
+
+.footer > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.playfield{
+    user-select: none;
+    width: 60vh;
+    height: 60vh;
+    margin: 0 auto;
+    color: white;
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    gap: 1vh;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.6vh solid black;
+    border-radius: 10%;
+    font-size: 15vh;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: white;
+    opacity: 0.4;
+}
+
+.x::before{
+    content: 'X';
+}
+
+.o::before{
+    content: 'O';
+}
+
+.current-turn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 3.5vh;
+}
