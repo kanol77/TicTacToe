@@ -48,7 +48,7 @@ function handleClick(e){
         alert(currentClass.toUpperCase() + ' is the Winner!');
         window.location.reload();
     }
-    if(checkDraw()){
+    else if(checkDraw()){
         alert("It's a draw!");
         window.location.reload();
     }
